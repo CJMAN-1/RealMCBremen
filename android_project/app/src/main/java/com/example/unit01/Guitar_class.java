@@ -379,6 +379,10 @@ public class Guitar_class extends MainActivity  {
             @Override
             public void onClick(View v) {
                 Log.d("Touch", "onClick: C");
+                C.setImageResource(R.drawable.code_c_push);
+                F.setImageResource(R.drawable.code_f);
+                G.setImageResource(R.drawable.code_g);
+                Am.setImageResource(R.drawable.code_am);
                 code = 0;
             }
         });
@@ -386,6 +390,10 @@ public class Guitar_class extends MainActivity  {
             @Override
             public void onClick(View v) {
                 Log.d("Touch", "onClick: F");
+                C.setImageResource(R.drawable.code_c);
+                F.setImageResource(R.drawable.code_f_push);
+                G.setImageResource(R.drawable.code_g);
+                Am.setImageResource(R.drawable.code_am);
                 code = 1;
             }
         });
@@ -393,6 +401,10 @@ public class Guitar_class extends MainActivity  {
             @Override
             public void onClick(View v) {
                 Log.d("Touch", "onClick: G");
+                C.setImageResource(R.drawable.code_c);
+                F.setImageResource(R.drawable.code_f);
+                G.setImageResource(R.drawable.code_g_push);
+                Am.setImageResource(R.drawable.code_am);
                 code = 2;
             }
         });
@@ -400,6 +412,10 @@ public class Guitar_class extends MainActivity  {
             @Override
             public void onClick(View v) {
                 Log.d("Touch", "onClick: Am");
+                C.setImageResource(R.drawable.code_c);
+                F.setImageResource(R.drawable.code_f);
+                G.setImageResource(R.drawable.code_g);
+                Am.setImageResource(R.drawable.code_am_push);
                 code = 3;
             }
         });

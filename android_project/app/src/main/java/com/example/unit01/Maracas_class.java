@@ -53,8 +53,6 @@ public class Maracas_class extends MainActivity implements SensorEventListener, 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_maracas);      //잘 바꾸자 제발
 
-
-
         img = (ImageView)findViewById(R.id.mara);
 
         sensorManager = (SensorManager)getSystemService(Context.SENSOR_SERVICE);
