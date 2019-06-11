@@ -32,7 +32,7 @@
                                     android:layout_height="match_parent"
                                     android:layout_weight="1"
                                     android:scaleType="centerInside"
-                                    android:src="@drawable/code_c"
+                                    android:src="@drawable/code_c_push"
                                     android:background="@drawable/woodentexture"/>
                                 <ImageButton
                                     android:id="@+id/code_f"

@@ -1,23 +1,23 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Git-Local\MusicianOfBremen-1\android_project\orgsmartrobotandroid8154\src\main\AndroidManifest.xml:1:1-6:12
-INJECTED from C:\Git-Local\MusicianOfBremen-1\android_project\orgsmartrobotandroid8154\src\main\AndroidManifest.xml:1:1-6:12
-INJECTED from C:\Git-Local\MusicianOfBremen-1\android_project\orgsmartrobotandroid8154\src\main\AndroidManifest.xml:1:1-6:12
-INJECTED from C:\Git-Local\MusicianOfBremen-1\android_project\orgsmartrobotandroid8154\src\main\AndroidManifest.xml:1:1-6:12
-INJECTED from C:\Git-Local\MusicianOfBremen-1\android_project\orgsmartrobotandroid8154\src\main\AndroidManifest.xml:1:1-6:12
-INJECTED from C:\Git-Local\MusicianOfBremen-1\android_project\orgsmartrobotandroid8154\src\main\AndroidManifest.xml:1:1-6:12
-INJECTED from C:\Git-Local\MusicianOfBremen-1\android_project\orgsmartrobotandroid8154\src\main\AndroidManifest.xml:1:1-6:12
+ADDED from D:\Git-Local\RealMCBremen\android_project\orgsmartrobotandroid8154\src\main\AndroidManifest.xml:1:1-6:12
+INJECTED from D:\Git-Local\RealMCBremen\android_project\orgsmartrobotandroid8154\src\main\AndroidManifest.xml:1:1-6:12
+INJECTED from D:\Git-Local\RealMCBremen\android_project\orgsmartrobotandroid8154\src\main\AndroidManifest.xml:1:1-6:12
+INJECTED from D:\Git-Local\RealMCBremen\android_project\orgsmartrobotandroid8154\src\main\AndroidManifest.xml:1:1-6:12
+INJECTED from D:\Git-Local\RealMCBremen\android_project\orgsmartrobotandroid8154\src\main\AndroidManifest.xml:1:1-6:12
+INJECTED from D:\Git-Local\RealMCBremen\android_project\orgsmartrobotandroid8154\src\main\AndroidManifest.xml:1:1-6:12
+INJECTED from D:\Git-Local\RealMCBremen\android_project\orgsmartrobotandroid8154\src\main\AndroidManifest.xml:1:1-6:12
 	package
-		ADDED from C:\Git-Local\MusicianOfBremen-1\android_project\orgsmartrobotandroid8154\src\main\AndroidManifest.xml:2:2-34
-		INJECTED from C:\Git-Local\MusicianOfBremen-1\android_project\orgsmartrobotandroid8154\src\main\AndroidManifest.xml
-		INJECTED from C:\Git-Local\MusicianOfBremen-1\android_project\orgsmartrobotandroid8154\src\main\AndroidManifest.xml
+		ADDED from D:\Git-Local\RealMCBremen\android_project\orgsmartrobotandroid8154\src\main\AndroidManifest.xml:2:2-34
+		INJECTED from D:\Git-Local\RealMCBremen\android_project\orgsmartrobotandroid8154\src\main\AndroidManifest.xml
+		INJECTED from D:\Git-Local\RealMCBremen\android_project\orgsmartrobotandroid8154\src\main\AndroidManifest.xml
 	android:versionName
-		ADDED from C:\Git-Local\MusicianOfBremen-1\android_project\orgsmartrobotandroid8154\src\main\AndroidManifest.xml:4:2-29
-		INJECTED from C:\Git-Local\MusicianOfBremen-1\android_project\orgsmartrobotandroid8154\src\main\AndroidManifest.xml
-		INJECTED from C:\Git-Local\MusicianOfBremen-1\android_project\orgsmartrobotandroid8154\src\main\AndroidManifest.xml
+		ADDED from D:\Git-Local\RealMCBremen\android_project\orgsmartrobotandroid8154\src\main\AndroidManifest.xml:4:2-29
+		INJECTED from D:\Git-Local\RealMCBremen\android_project\orgsmartrobotandroid8154\src\main\AndroidManifest.xml
+		INJECTED from D:\Git-Local\RealMCBremen\android_project\orgsmartrobotandroid8154\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from C:\Git-Local\MusicianOfBremen-1\android_project\orgsmartrobotandroid8154\src\main\AndroidManifest.xml:1:11-69
+		ADDED from D:\Git-Local\RealMCBremen\android_project\orgsmartrobotandroid8154\src\main\AndroidManifest.xml:1:11-69
 	android:versionCode
-		ADDED from C:\Git-Local\MusicianOfBremen-1\android_project\orgsmartrobotandroid8154\src\main\AndroidManifest.xml:3:2-25
-		INJECTED from C:\Git-Local\MusicianOfBremen-1\android_project\orgsmartrobotandroid8154\src\main\AndroidManifest.xml
-		INJECTED from C:\Git-Local\MusicianOfBremen-1\android_project\orgsmartrobotandroid8154\src\main\AndroidManifest.xml
+		ADDED from D:\Git-Local\RealMCBremen\android_project\orgsmartrobotandroid8154\src\main\AndroidManifest.xml:3:2-25
+		INJECTED from D:\Git-Local\RealMCBremen\android_project\orgsmartrobotandroid8154\src\main\AndroidManifest.xml
+		INJECTED from D:\Git-Local\RealMCBremen\android_project\orgsmartrobotandroid8154\src\main\AndroidManifest.xml

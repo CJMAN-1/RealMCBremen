@@ -81,7 +81,7 @@
             android:layout_weight="1"
             android:background="#000000"
             android:scaleType="centerInside"
-            android:src="@drawable/piano" />
+            android:src="@drawable/piano_push" />
 
         <ImageButton
             android:id="@+id/guitar"
@@ -90,7 +90,7 @@
             android:layout_weight="1"
             android:background="#000000"
             android:scaleType="centerInside"
-            android:src="@drawable/guitar" />
+            android:src="@drawable/guitar_push" />
 
         <ImageButton
             android:id="@+id/maracas"
@@ -99,7 +99,7 @@
             android:layout_weight="1"
             android:background="#000000"
             android:scaleType="centerInside"
-            android:src="@drawable/maracas" />
+            android:src="@drawable/maracas_push" />
 
         <ImageButton
             android:id="@+id/playlist"
@@ -109,7 +109,7 @@
             android:layout_weight="1"
             android:background="#000000"
             android:scaleType="centerInside"
-            android:src="@drawable/playlist" />
+            android:src="@drawable/playlist_push" />
 
     </LinearLayout>
 </LinearLayout>
