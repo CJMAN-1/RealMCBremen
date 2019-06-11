@@ -1,0 +1,266 @@
+<android.support.v4.widget.DrawerLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/drawer_layout"
+android:layout_width="match_parent"
+android:layout_height="match_parent" >
+<!--우리가 구현할 레이아웃-->
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="fill"
+    android:background="#078293"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button_do"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/white1"
+                android:onClick="mOnClick" />
+
+            <Button
+                android:id="@+id/button_re"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/white2"
+                android:onClick="mOnClick" />
+
+            <Button
+                android:id="@+id/button_mi"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/white3"
+                android:onClick="mOnClick" />
+
+            <Button
+                android:id="@+id/button_pa"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/white1"
+                android:onClick="mOnClick" />
+
+            <Button
+                android:id="@+id/button_sol"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/white2"
+                android:onClick="mOnClick" />
+
+            <Button
+                android:id="@+id/button_ra"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/white2"
+                android:onClick="mOnClick" />
+
+            <Button
+                android:id="@+id/button_si"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/white3"
+                android:onClick="mOnClick" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="200dp"
+                android:layout_gravity="top"
+                android:layout_weight="0.5"
+                ></View>
+            <Button
+                android:id="@+id/button_b1"
+                android:layout_width="0dp"
+                android:layout_height="200dp"
+                android:layout_gravity="top"
+                android:layout_weight="1"
+                android:paddingHorizontal="20dp"
+                android:background="@drawable/black"
+                android:onClick="mOnClick" />
+            <Button
+                android:id="@+id/button_b2"
+                android:layout_width="0dp"
+                android:layout_height="200dp"
+                android:layout_gravity="top"
+                android:layout_weight="1"
+                android:paddingHorizontal="20dp"
+                android:background="@drawable/black"
+
+                android:onClick="mOnClick" />
+            <View
+                android:layout_width="0dp"
+                android:layout_height="200dp"
+                android:layout_gravity="top"
+                android:layout_weight="1"
+                ></View>
+
+            <Button
+                android:id="@+id/button_b3"
+                android:layout_width="0dp"
+                android:layout_height="200dp"
+                android:layout_gravity="top"
+                android:layout_weight="1"
+                android:paddingHorizontal="20dp"
+                android:background="@drawable/black"
+                android:onClick="mOnClick" />
+            <Button
+                android:id="@+id/button_b4"
+                android:layout_width="0dp"
+                android:layout_height="200dp"
+                android:layout_gravity="top"
+                android:layout_weight="1"
+                android:paddingHorizontal="20dp"
+                android:background="@drawable/black"
+                android:onClick="mOnClick" />
+            <Button
+                android:id="@+id/button_b5"
+                android:layout_width="0dp"
+                android:layout_height="200dp"
+                android:layout_gravity="top"
+                android:layout_weight="1"
+                android:paddingHorizontal="20dp"
+                android:background="@drawable/black"
+                android:onClick="mOnClick" />
+            <View
+                android:layout_width="0dp"
+                android:layout_height="200dp"
+                android:layout_gravity="top"
+                android:layout_weight="0.5"
+                android:paddingHorizontal="20dp"
+                ></View>
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>
+
+
+<!--오른쪽 버튼 모음-->
+<LinearLayout
+    android:layout_width="100dp"
+    android:layout_height="match_parent"
+    android:layout_gravity="right"
+    android:id = "@+id/top_drawer"
+    android:orientation="vertical"
+    android:background="#4Df0f0f0">
+    <Button
+        android:layout_width="85dp"
+        android:layout_height="40dp"
+        android:text="ASSEMBLE"
+        android:id="@+id/assemble"
+        android:layout_marginVertical="1dp"
+        android:layout_gravity="center_horizontal"
+        android:background="#80f0f0f0"
+        android:onClick="mOnClick"
+        />
+
+    <Button
+        android:layout_width="85dp"
+        android:layout_height="40dp"
+        android:text="BEAT"
+        android:id="@+id/beat"
+        android:layout_marginVertical="1dp"
+        android:layout_gravity="center_horizontal"
+        android:onClick="mOnClick"
+        />
+
+    <ImageButton
+        android:layout_width="85dp"
+        android:layout_height="40dp"
+        android:src="@drawable/button_play"
+        android:id="@+id/play"
+        android:layout_marginVertical="1dp"
+        android:padding = "0dp"
+        android:scaleType="fitXY"
+        android:layout_gravity="center_horizontal"
+        android:onClick="mOnClick"
+        />
+
+    <ImageButton
+        android:layout_width="85dp"
+        android:layout_height="40dp"
+        android:src="@drawable/button_record"
+        android:id="@+id/record"
+        android:layout_marginVertical="1dp"
+        android:padding = "0dp"
+        android:scaleType="fitXY"
+        android:layout_gravity="center_horizontal"
+        android:onClick="mOnClick"
+        />
+</LinearLayout>
+
+<!--왼쪽 버튼모음-->
+<LinearLayout
+    android:id="@+id/left_drawer"
+    android:layout_width="240dp"
+    android:layout_height="match_parent"
+    android:layout_gravity="start"
+    android:background="#4Df0f0f0"
+    android:orientation="vertical"
+    android:padding="5dp" >
+
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:src="@drawable/turned_piano"
+        android:id="@+id/piano_change2"
+        android:layout_marginVertical="1dp"
+        android:layout_marginHorizontal="3dp"
+        android:scaleType="fitXY"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1"
+        android:background="#00000000"
+        android:onClick="mOnClick"
+        />
+
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:src="@drawable/guitar"
+        android:id="@+id/guitar_change2"
+        android:layout_marginVertical="1dp"
+        android:layout_marginHorizontal="3dp"
+        android:scaleType="fitXY"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1"
+        android:background="#00000000"
+        android:onClick="mOnClick"
+        />
+
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:src="@drawable/maracas"
+        android:id="@+id/maracas_change2"
+        android:layout_marginVertical="1dp"
+        android:layout_marginHorizontal="3dp"
+        android:scaleType="fitXY"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1"
+        android:background="#00000000"
+        android:onClick="mOnClick"
+        />
+</LinearLayout>
+
+</android.support.v4.widget.DrawerLayout>
