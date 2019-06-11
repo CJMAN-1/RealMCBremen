@@ -84,9 +84,9 @@ public class MainActivity extends Activity implements View.OnClickListener {
     SharedPreferences preferences ;
     SharedPreferences.Editor editor;
 
-    int noraeNum = 0;
-    int last = 0;
-    int just =0;
+    public static int noraeNum = 0;
+    public static int last = 0;
+    public static int just =0;
     //////////////////////////////////////////
 
     @Override
@@ -201,7 +201,6 @@ public class MainActivity extends Activity implements View.OnClickListener {
 
         preferences = getSharedPreferences("Bremen",MODE_PRIVATE);
         editor = preferences.edit();
-        editor.clear();
 
 
         backflag =0;
@@ -211,8 +210,11 @@ public class MainActivity extends Activity implements View.OnClickListener {
         @Override
         public  void onBackPressed(){
             super.onBackPressed();
-            if(backflag ==0)
+            if(backflag ==0){
+                editor.clear();
                 showDialog(Dial_Exit);
+            }
+
         }
 
 
@@ -406,7 +408,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
                 }
 
             }
-            playArray.clear();
+
         }
     }
 
@@ -426,8 +428,11 @@ public class MainActivity extends Activity implements View.OnClickListener {
                     tEnd= System.currentTimeMillis();
                     recordFlag = 0;
                     recordButton.setImageResource(R.drawable.button_record);
-
+                    playArray.clear();
+                    playArray = (ArrayList)timeArray.clone();
                     int size = timeArray.size();
+                    if(size == 0)
+                        break;
 
                     editor.putLong("norae"+last+0 , size);
                     for(int k=0;k<size;k++){
@@ -441,6 +446,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
                     editor.commit();
                     noraeNum++;
                     last++;
+                    Log.d("cjc",""+noraeNum);
                     break;
                 }
 

@@ -3,11 +3,19 @@
     android:layout_height="match_parent"
     android:orientation="horizontal"
     android:background="#000000">
+    <ImageButton
+        android:id="@+id/all_del"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:scaleType="centerInside"
+        android:src="@drawable/trashcan"
+        android:background="#BDC0B3"
+        />
     <ListView
         android:id="@+id/list"
+        android:layout_toRightOf="@id/all_del"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:divider="#ffffff"
         android:dividerHeight="1dp" />
 </RelativeLayout>
-

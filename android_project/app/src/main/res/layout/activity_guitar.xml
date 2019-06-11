@@ -116,26 +116,7 @@
             android:orientation="vertical"
             android:background="#4Df0f0f0"
             android:clickable="true">
-                <Button
-                    android:layout_width="85dp"
-                    android:layout_height="40dp"
-                    android:text="ASSEMBLE"
-                    android:id="@+id/assemble"
-                    android:layout_marginVertical="1dp"
-                    android:layout_gravity="center_horizontal"
-                    android:background="#80f0f0f0"
-                    android:onClick="mOnClick"
-                    />
 
-                <Button
-                    android:layout_width="85dp"
-                    android:layout_height="40dp"
-                    android:text="BEAT"
-                    android:id="@+id/beat"
-                    android:layout_marginVertical="1dp"
-                    android:layout_gravity="center_horizontal"
-                    android:onClick="mOnClick"
-                    />
 
                 <ImageButton
                     android:layout_width="85dp"
