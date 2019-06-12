@@ -32,10 +32,16 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import org.roboid.robot.Device;
+import org.roboid.robot.Robot;
+import org.smartrobot.android.RobotActivity;
+
 import java.util.ArrayList;
 
+import kr.robomation.physical.Albert;
 
-public class MainActivity extends Activity implements View.OnClickListener {
+
+public class MainActivity extends RobotActivity implements View.OnClickListener {
 
     private ImageButton Exit;
     private ImageButton Piano;
@@ -87,7 +93,24 @@ public class MainActivity extends Activity implements View.OnClickListener {
     public static int noraeNum = 0;
     public static int last = 0;
     public static int just =0;
+    public Device leftWheelDevice;
+    public Device rightWheelDevice;
+    int Dplayflag =0;
+
     //////////////////////////////////////////
+    @Override
+    public void onInitialized(Robot robot) {
+        super.onInitialized(robot);
+        leftWheelDevice = robot.findDeviceById(Albert.EFFECTOR_LEFT_WHEEL);
+        rightWheelDevice = robot.findDeviceById(Albert.EFFECTOR_RIGHT_WHEEL);
+
+    }
+
+    @Override
+    public void onExecute() {
+
+
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -207,15 +230,15 @@ public class MainActivity extends Activity implements View.OnClickListener {
     }
 
 
-        @Override
-        public  void onBackPressed(){
-            super.onBackPressed();
-            if(backflag ==0){
-                editor.clear();
-                showDialog(Dial_Exit);
-            }
-
+    @Override
+    public void onBackPressed() {
+        if (backflag == 0) {
+            editor.clear();
+            showDialog(Dial_Exit);
         }
+        else
+            finish();
+    }
 
 
     @Override
@@ -271,7 +294,17 @@ public class MainActivity extends Activity implements View.OnClickListener {
             int i=0;
             temp1 = System.currentTimeMillis();
             tick temp3;
-            while(true){
+            //돌게 만들어
+            Dplayflag = 1;
+            Log.d("tlqkf",""+Dplayflag);
+
+            while(true){////////////////////////////////////////이부분 질문하기.
+                try {
+                    Thread.sleep(10);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+
                 Log.d ("1record","재생:"+i);
                 if(i==num) {
                     Log.d ("1record","break:"+i);
@@ -407,9 +440,13 @@ public class MainActivity extends Activity implements View.OnClickListener {
                     Log.d ("1record","i++:"+i);
                 }
 
-            }
 
-        }
+            }
+            Dplayflag = 0;
+            Log.d("tlqkf",""+Dplayflag);
+         //  leftWheelDevice.write(100);
+          //      rightWheelDevice.write(-100);
+        }//////////////스레드 끝나는 부분
     }
 
     @Override
@@ -421,7 +458,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
                 if(recordFlag ==0){
                     tStart= System.currentTimeMillis();
                     recordFlag = 1;
-                    recordButton.setImageResource(R.drawable.boy);
+                    recordButton.setImageResource(R.drawable.button_recording);
                     break;
                 }
                 else {
@@ -451,8 +488,13 @@ public class MainActivity extends Activity implements View.OnClickListener {
                 }
 
             case R.id.play:
+         //       if(leftWheelDevice != null){
 
-
+                    leftWheelDevice.write(100);
+        //        }
+        //        if(rightWheelDevice != null) {
+                    rightWheelDevice.write(-100);
+        //        }
                 playThread.run();
 
                 break;
